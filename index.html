@@ -12,12 +12,37 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <!-- Importa os ícones do modo noturno da Google API -->
-    <!-- Modo noturno off -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_off" />
-    <!-- Modo noturno on -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0&icon_names=toggle_on" />
+    <!-- Modo noturno on-off -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_off,toggle_on" />
 </head>
 <body>
-    
+    <header class="flex">
+        <p id="logo" class="blue-highlight">treine.me</p>
+        <ul class="flex">
+            <li id="current-page">Home</li>
+            <li>About</li>
+            <li>Training</li>
+            <span class="material-symbols-outlined">toggle_off</span>
+            <span class="material-symbols-outlined">toggle_on</span>
+        </ul>
+    </header>
+    <section id="hero-section">
+        <div class="left-side">
+            <h1>
+                WORKOUTS MADE<br>
+                <span class="blue-highlight">EXCLUSIVE</span> FOR YOU!
+            </h1>
+
+            <p>
+                We create exclusive and unique workouts for you.<br>
+                Invest in your body and get much more performance<br>
+                and quality of life.
+            </p>
+            <a id="cta-button" href="#">Start now</a>
+        </div>
+        <div class="right-side">
+            <img src="./imgs/girl-lifting-weights.png" alt="A girl lifting dumbbells">
+        </div>
+    </section>
 </body>
 </html>
