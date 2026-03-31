@@ -9,7 +9,7 @@
     --cta-button-bg: #69B99D;
 }
 
-.modo-noturno {
+.dark-theme {
     --primary-color: #0F0E0E;
     --h1-color: #BEBDB8;
     --highlight: #DC143C;
@@ -31,10 +31,10 @@ body {
 .paragraph-color {
     color: var(--paragraph-color);
 }
-.list-color-current {
+.list-color-current a {
     color: var(--list-color-current);
 }
-.list-color {
+.list-color a {
     color: var(--list-color);
 }
 
@@ -66,6 +66,36 @@ ul > li {
     padding: 0px 20px;
 }
 
+li a {
+    text-decoration: none;
+}
+
+#dark-theme-btn {
+    background-color: #2F4C39;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Esconde o segundo botão no modo claro */
+#dark-theme-btn svg:last-child {
+    display: none;
+}
+
+/* Esconde o primeiro botão no modo noturno */
+.dark-theme #dark-theme-btn svg:first-child {
+    display: none;
+}
+
+/* Mostra o segundo botão no modo claro */
+.dark-theme #dark-theme-btn svg:last-child {
+    display: block;
+}
 
 /* MAIN */
 #hero-section {
