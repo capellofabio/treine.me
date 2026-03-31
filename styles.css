@@ -1,7 +1,87 @@
+/* Declarando variáveis */
 :root {
     --blue-highlight: #89C5CC;
     --paragraph-color: #7D7987;
     --list-color-current: #1F1534;
     --list-color: #1F153480;
     --cta-button-bg: #69B99D;
+}
+
+body {
+    margin: 3vh 7vw 0 7vw;
+}
+
+/* Transformando variáveis em classes */
+.blue-highlight {
+    color: var(--blue-highlight);
+}
+.paragraph-color {
+    color: var(--paragraph-color);
+}
+.list-color-current {
+    color: var(--list-color-current);
+}
+.list-color {
+    color: var(--list-color);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* HEADER */
+header {
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7vh;
+}
+
+#logo {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+ul > li {
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    list-style: none;
+    padding: 0px 20px;
+}
+
+
+/* MAIN */
+#hero-section {
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: "Mulish", sans-serif;
+    font-size: 48px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.left-side > p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 7vh;
+}
+
+#cta-button {
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--cta-button-bg);
+    padding: 14px 32px 15px 32px;
+    text-decoration: none;
+    color: white;
+}
+
+.right-side > img {
+    margin-right: 7vw;
 }
