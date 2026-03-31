@@ -11,6 +11,7 @@ function disableDarkTheme() {
     localStorage.setItem("dark-theme", null);
 }
 
+// Detecta click no botão: Se modo noturno ativo, desativa. Senão, ativa.
 darkThemeSwitch.addEventListener("click", () => {
     darkTheme = localStorage.getItem("dark-theme")
     if (darkTheme !== "active") {
@@ -20,6 +21,7 @@ darkThemeSwitch.addEventListener("click", () => {
 }
 })
 
+// Se o modo noturno no localStorage estiver ativo, ativa o modo noturno por padrão ao recarregar a página.
 if (darkTheme === "active") {
     enableDarkTheme();
 }
